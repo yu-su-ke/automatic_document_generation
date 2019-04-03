@@ -1,12 +1,6 @@
 from glob import iglob
-import sys
 import markovify
 import datetime
-import pathlib
-# base.pyのあるディレクトリの絶対パスを取得
-current_dir = pathlib.Path(__file__).resolve().parent
-# モジュールのあるパスを追加
-sys.path.append(str(current_dir) + '/../')
 from mecab_text import mecab_text
 from text_format import text_format
 
@@ -21,10 +15,36 @@ def load_from_file(files_pattern):
     return text
 
 
+def markov(splitted_text, save_path, text_file, i):
+    # learn model from text.
+    text_model = markovify.NewlineText(splitted_text, state_size=2)
+    # ... and generate from model. tries default 10
+    sentence = text_model.make_sentence(tries=10)
+
+    if str(sentence) != 'None':
+        print(''.join(sentence.split()))  # need to concatenate space-splitted text
+        with open(save_path + text_file + '_markov.txt', 'a+', encoding='utf-8') as save_file1:
+            save_file1.write(str(i + 1) + ' : ' + ''.join(sentence.split()) + '\n')
+    else:
+        print('None')
+        with open(save_path + text_file + '_markov.txt', 'a+', encoding='utf-8') as save_file2:
+            save_file2.write(str(i + 1) + ' : ' + ''.join('None') + '\n')
+
+    # save learned data
+    with open(save_path + text_file + '_learned_data.json', 'w', encoding="utf-8") as f:
+        f.write(text_model.to_json())
+
+    # later, if you want to reuse learned data...
+    """
+    with open('learned_data.json') as f:
+        text_model = markovify.NewlineText.from_json(f.read())
+    """
+
+
 def main():
     # ファイルパス
-    document_type = 'novel'
-    text_file = 'souseki_merge'
+    document_type = 'tweet'
+    text_file = 'WSJJapan'
 
     open_path = '../' + document_type + '/'
     format_path = '../' + document_type + '/format/'
@@ -40,31 +60,9 @@ def main():
 
     splitted_text = mecab_text(text_data)
 
-    # learn model from text.
     # rangeの中身は実行回数
     for i in range(5):
-        text_model = markovify.NewlineText(splitted_text, state_size=2)
-        # ... and generate from model. tries default 10
-        sentence = text_model.make_sentence(tries=10)
-
-        if str(sentence) != 'None':
-            print(''.join(sentence.split()))    # need to concatenate space-splitted text
-            with open(save_path + text_file + '_markov.txt', 'a+', encoding='utf-8') as save_file1:
-                save_file1.write(str(i + 1) + ' : ' + ''.join(sentence.split()) + '\n')
-        else:
-            print('None')
-            with open(save_path + text_file + '_markov.txt', 'a+', encoding='utf-8') as save_file2:
-                save_file2.write(str(i + 1) + ' : ' + ''.join('None') + '\n')
-
-        # save learned data
-        with open(save_path + text_file + '_learned_data.json', 'w', encoding="utf-8") as f:
-            f.write(text_model.to_json())
-
-        # later, if you want to reuse learned data...
-        """
-        with open('learned_data.json') as f:
-            text_model = markovify.NewlineText.from_json(f.read())
-        """
+        markov(splitted_text, save_path, text_file, i)
 
 
 if __name__ == '__main__':
