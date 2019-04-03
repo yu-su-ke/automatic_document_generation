@@ -8,6 +8,7 @@ from pathlib import Path
 # 検索語ツイート収集準備
 word = 'test'
 search = u'甲子園'
+exclude = ' exclude:retweets'
 # 日付指定
 since = '2018-08-21_00:00:00_JST'
 until = '2018-08-21_23:59:59_JST'
@@ -40,7 +41,7 @@ def save_database():
     50000件(1:31:10待ち)
     617260件(12時間待ち)
     """
-    tweets = TweetsGetter.bySearch(search + ' since:' + since + ' until:' + until).collect(total=tweets_num)
+    tweets = TweetsGetter.bySearch(search + ' since:' + since + ' until:' + until + exclude).collect(total=tweets_num)
     for tweet in tweets:
         tweet_contents = {}
         '''
