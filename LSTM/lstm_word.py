@@ -47,8 +47,8 @@ print("Total words :", len(words))
 word_indices = dict((c, i) for i, c in enumerate(words))
 indices_word = dict((i, c) for i, c in enumerate(words))
 # (max_len)個の次の1単語を学習させる. (step)単語ずつずらして(max_len)単語と1単語というセットを作る
-max_len = 10
-step = 3
+max_len = 3
+step = 1
 sentences = []
 next_words = []
 for i in range(0, len(text) - max_len, step):
