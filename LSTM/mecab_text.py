@@ -5,7 +5,7 @@ def mecab_text(text):
     # windows
     # mecab = MeCab.Tagger('-Owakati')
     # mac
-    mecab = MeCab.Tagger("-Owakati")
+    mecab = MeCab.Tagger("-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/")
     mecab.parse("")
     split_text = ""
     output = []

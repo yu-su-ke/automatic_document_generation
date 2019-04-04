@@ -4,9 +4,7 @@
     <list default="true" id="02d41e64-1e2d-444b-a27f-35afa8c33fa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LSTM/mecab_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM/mecab_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Markov/markov.py" beforeDir="false" afterPath="$PROJECT_DIR$/Markov/markov.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Markov/mecab_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Markov/mecab_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novel/markov/kusamakura_markov.txt" beforeDir="false" afterPath="$PROJECT_DIR$/novel/markov/kusamakura_markov.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_detail.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_detail.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_model.h5" afterDir="false" />
@@ -23,10 +21,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="702">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Markov/markov.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,7 +46,16 @@
         <entry file="file://$PROJECT_DIR$/LSTM/mecab_text.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <caret line="7" column="86" lean-forward="true" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Markov/mecab_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="891">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -44,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -74,12 +93,12 @@
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/tests/test_lstm.py" />
         <option value="$PROJECT_DIR$/tests/test_markov.py" />
-        <option value="$PROJECT_DIR$/Markov/markov.py" />
         <option value="$PROJECT_DIR$/GetTweet/getTweets_saveMongo.py" />
         <option value="$PROJECT_DIR$/LSTM/lstm_word.py" />
         <option value="$PROJECT_DIR$/tests/test.py" />
         <option value="$PROJECT_DIR$/Markov/mecab_text.py" />
         <option value="$PROJECT_DIR$/LSTM/mecab_text.py" />
+        <option value="$PROJECT_DIR$/Markov/markov.py" />
       </list>
     </option>
   </component>
@@ -155,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.markov">
     <configuration name="lstm_word" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="automatic_document_generation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,9 +271,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.markov" />
         <item itemvalue="Python.lstm_word" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.mecab_text" />
       </list>
     </recent_temporary>
@@ -271,12 +290,12 @@
       <updated>1554276929762</updated>
       <workItem from="1554362784893" duration="4801000" />
       <workItem from="1554371241645" duration="180000" />
-      <workItem from="1554371437751" duration="411000" />
+      <workItem from="1554371437751" duration="1605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5392000" />
+    <option name="totallyTimeSpent" value="6586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,8 +337,9 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/automatic_document_generation$lstm_word.coverage" NAME="lstm_word Coverage Results" MODIFIED="1554372708931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LSTM" />
     <SUITE FILE_PATH="coverage/automatic_document_generation$test.coverage" NAME="test Coverage Results" MODIFIED="1554371586338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/automatic_document_generation$markov.coverage" NAME="markov Coverage Results" MODIFIED="1554371539943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Markov" />
+    <SUITE FILE_PATH="coverage/automatic_document_generation$markov.coverage" NAME="markov Coverage Results" MODIFIED="1554373142989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Markov" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -402,10 +422,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LSTM/text_format.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="702">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -414,15 +437,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Markov/markov.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="278">
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -433,13 +459,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LSTM/text_format.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/LSTM/mecab_text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <caret line="7" column="86" lean-forward="true" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
         </state>
       </provider>
     </entry>
