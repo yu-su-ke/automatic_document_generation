@@ -6,12 +6,12 @@ client = MongoClient('localhost', 27017)
 db = client.mydb
 
 # コレクション指定
-collection = 'afpbbcom'
-document_num = 1000
+collection = 'WSJJapan'
+document_num = 3000
 
 count = db[collection + '_tweets'].find().limit(document_num)
 
-open_path = './tweet/'
+open_path = '../tweet/'
 
 
 # 書き込みファイル指定(確認用)
