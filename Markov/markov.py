@@ -35,10 +35,10 @@ def markov(splitted_text, save_path, text_file, i):
         f.write(text_model.to_json())
 
     # later, if you want to reuse learned data...
-    """
-    with open('learned_data.json') as f:
-        text_model = markovify.NewlineText.from_json(f.read())
-    """
+    # """
+    # with open('learned_data.json') as f:
+    #     text_model = markovify.NewlineText.from_json(f.read())
+    # """
 
 
 def main():
