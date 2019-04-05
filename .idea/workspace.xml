@@ -1,62 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02d41e64-1e2d-444b-a27f-35afa8c33fa4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/automatic_document_generation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automatic_document_generation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GetTweet/getTweets_readMongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetTweet/getTweets_readMongo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Markov/mecab_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Markov/mecab_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novel/format/bocchan_format.txt" beforeDir="false" afterPath="$PROJECT_DIR$/novel/format/bocchan_format.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novel/format/kokoro_format.txt" beforeDir="false" afterPath="$PROJECT_DIR$/novel/format/kokoro_format.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novel/markov/bocchan_learned_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/novel/markov/bocchan_learned_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novel/markov/bocchan_markov.txt" beforeDir="false" afterPath="$PROJECT_DIR$/novel/markov/bocchan_markov.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/novel/markov/kusamakura_markov.txt" beforeDir="false" afterPath="$PROJECT_DIR$/novel/markov/kusamakura_markov.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/WSJJapan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/WSJJapan.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/afpbbcom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/afpbbcom.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/format/WSJJapan_format.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/format/WSJJapan_format.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/format/afpbbcom_format.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/format/afpbbcom_format.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/markov/WSJJapan_learned_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/markov/WSJJapan_learned_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/markov/WSJJapan_markov.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/markov/WSJJapan_markov.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/markov/afpbbcom_learned_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/markov/afpbbcom_learned_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/markov/afpbbcom_markov.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/markov/afpbbcom_markov.txt" afterDir="false" />
-    </list>
+    <list default="true" id="02d41e64-1e2d-444b-a27f-35afa8c33fa4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1790490062">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="83" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GetTweet/getTweets_readMongo.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="459">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Markov/markov.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            <state relative-caret-position="243">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -73,18 +34,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Markov/mecab_text.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="108">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Markov/text_format.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/LSTM/mecab_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Markov/mecab_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="891">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -133,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +147,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,6 +191,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GetTweet/getTweets_readMongo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -306,11 +290,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.getTweets_readMongo" />
       <item itemvalue="Python.lstm_word" />
       <item itemvalue="Python.markov" />
       <item itemvalue="Python.mecab_text" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.getTweets_readMongo" />
     </list>
     <recent_temporary>
       <list>
@@ -339,7 +323,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6904000" />
+    <option name="totallyTimeSpent" value="7899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,9 +335,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12760417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12946783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,9 +363,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/automatic_document_generation$lstm_word.coverage" NAME="lstm_word Coverage Results" MODIFIED="1554372708931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LSTM" />
@@ -457,7 +439,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="108">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
@@ -469,19 +451,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="135">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
@@ -495,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Markov/markov.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="243">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
@@ -508,8 +480,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Markov/mecab_text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="891">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
