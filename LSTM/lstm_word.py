@@ -21,7 +21,7 @@ def sample(preds, temperature=1.0):
 
 # ファイルパス
 document_type = 'novel'
-text_file = 'kusamakura'
+text_file = 'souseki_merge'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
