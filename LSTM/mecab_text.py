@@ -1,11 +1,16 @@
 import MeCab
+import platform
 
 
 def mecab_text(text):
-    # windows
-    # mecab = MeCab.Tagger('-Owakati')
-    # mac
-    mecab = MeCab.Tagger("-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/")
+    pf = platform.system()
+    if pf == 'Windows':
+        mecab = MeCab.Tagger('-Owakati')
+    elif pf == 'Darwin':
+        mecab = MeCab.Tagger("-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/")
+    elif pf == 'Linux':
+        mecab = MeCab.Tagger("-Owakati -d /usr/lib/mecab/dic/mecab-ipadic-neologd/")
+
     mecab.parse("")
     split_text = ""
     output = []
