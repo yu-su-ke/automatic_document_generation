@@ -77,7 +77,7 @@ model.add(Activation("softmax"))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss="categorical_crossentropy", optimizer=optimizer)
 # epoch数
-ep = 10
+ep = 20
 
 
 def on_epoch_end(epoch, _):
