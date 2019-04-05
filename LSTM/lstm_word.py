@@ -20,8 +20,8 @@ def sample(preds, temperature=1.0):
 
 
 # ファイルパス
-document_type = 'tweet'
-text_file = 'WSJJapan'
+document_type = 'novel'
+text_file = 'kusamakura'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
@@ -77,7 +77,7 @@ model.add(Activation("softmax"))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss="categorical_crossentropy", optimizer=optimizer)
 # epoch数
-ep = 20
+ep = 40
 
 
 def on_epoch_end(epoch, _):
