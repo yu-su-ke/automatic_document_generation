@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="02d41e64-1e2d-444b-a27f-35afa8c33fa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LSTM/lstm_word.py" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM/lstm_word.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_detail.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_detail.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/tweet/lstm/WSJJapan_word_model.h5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="823">
-              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+            <state relative-caret-position="1295">
+              <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -296,12 +292,12 @@
       <workItem from="1554362784893" duration="4801000" />
       <workItem from="1554371241645" duration="180000" />
       <workItem from="1554371437751" duration="1923000" />
-      <workItem from="1554446720671" duration="359000" />
+      <workItem from="1554446720671" duration="1347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9428000" />
+    <option name="totallyTimeSpent" value="10416000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,8 +471,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LSTM/lstm_word.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+        <state relative-caret-position="1295">
+          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
