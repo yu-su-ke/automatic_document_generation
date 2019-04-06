@@ -18,7 +18,7 @@ setup(
     long_description=readme,
     author='mokky',
     author_email='',
-    install_requires=['keras', 'numpy', 'mecab-python3', 'markovify', 'pymongo'],
+    install_requires=['keras', 'numpy', 'mecab-python3', 'mecab-python-windows', 'markovify', 'pymongo'],
     url='https://github.com/kennethreitz/samplemod',
     license=license,
     packages=find_packages(exclude=('tests', 'docs')),

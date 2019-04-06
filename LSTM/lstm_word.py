@@ -6,7 +6,7 @@ import numpy as np
 import random
 import datetime
 import sys
-from mecab_text import mecab_text
+from mecab_lstm import mecab_lstm
 from text_format import text_format
 
 
@@ -21,7 +21,7 @@ def sample(preds, temperature=1.0):
 
 # ファイルパス
 document_type = 'novel'
-text_file = 'souseki_merge'
+text_file = 'wagahaiwa_nekodearu'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
@@ -29,7 +29,7 @@ save_path = '../' + document_type + '/lstm/'
 text_format(open_path, format_path, text_file, document_type)
 text_data = open(format_path + text_file + '_format.txt', "rb").read()
 text = text_data.decode("utf-8")
-splitted_text = mecab_text(text)
+splitted_text = mecab_lstm(text)
 
 # 現在時刻
 now = datetime.datetime.now()

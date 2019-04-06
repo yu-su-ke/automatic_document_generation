@@ -1,6 +1,13 @@
-import MeCab
+import tensorflow as tf
 
-mecab = MeCab.Tagger("-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd/")
-print(mecab.parse("乗り換え案内でお馴染みのジョルダン。主要施設の中に「野球場」がある。12球団の本拠地に加え神戸があるほか、大谷清宮フィーバーのせいか鎌ヶ谷が入っているまではわかる。"))
-
-# 乗り換え 案内 で お 馴染み の ジョルダン 。 主要 施設 の 中 に 「 野球場 」 が ある 。 12球団 の 本拠地 に 加え 神戸 が ある ほか 、 大谷 清宮 フィーバー の せい か 鎌ヶ谷 が 入っ て いる まで は わかる 。
+# Creates a graph.
+with tf.device('/gpu:0'):
+  a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name='a')
+  b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name='b')
+  c = tf.matmul(a, b)
+# Creates a session with allow_soft_placement and log_device_placement set
+# to True.
+sess = tf.Session(config=tf.ConfigProto(
+      allow_soft_placement=True, log_device_placement=True))
+# Runs the op.
+print(sess.run(c))

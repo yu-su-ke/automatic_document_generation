@@ -1,7 +1,7 @@
 from glob import iglob
 import markovify
 import datetime
-from mecab_text import mecab_text
+from mecab_markov import mecab_markov
 from text_format import text_format
 
 
@@ -58,7 +58,7 @@ def main():
     with open(save_path + text_file + '_markov' + '.txt', 'a+', encoding='utf-8') as file:
         file.write('\n' + now_time + '\n')
 
-    splitted_text = mecab_text(text_data)
+    splitted_text = mecab_markov(text_data)
 
     # rangeの中身は実行回数
     for i in range(5):

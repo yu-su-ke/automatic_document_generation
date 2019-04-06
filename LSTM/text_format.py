@@ -20,6 +20,8 @@ def text_format(open_path, format_path, text_file, document_type):
                 text = re.sub('[\s　]', '', text)
                 save_file.write(text)
 
+        text_data.close()
+
     if document_type == 'tweet':
         reply_pattern = '@[\w]+'
         url_pattern = 'https?://[\w/:%#\$&\?\(\)~\.=\+\-]+'

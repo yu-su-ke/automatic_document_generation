@@ -2,7 +2,7 @@ import MeCab
 import platform
 
 
-def mecab_text(text):
+def mecab_markov(text):
     pf = platform.system()
     if pf == 'Windows':
         mecab = MeCab.Tagger('-Owakati')
