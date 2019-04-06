@@ -12,6 +12,8 @@ def text_format(open_path, format_path, text_file, document_type):
                 text = re.split(r'\r', text)[0]
                 text = re.split(r'底本', text)[0]
                 text = text.replace('｜', '')
+                text = text.replace('(', '')
+                text = text.replace(')', '')
                 text = text.replace('-', '')
                 text = text.replace("'", '')
                 text = text.replace('\u3000', '')
