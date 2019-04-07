@@ -1,2 +1,4 @@
-from tensorflow.python.client import device_lib
-device_lib.list_local_devices()
+import MeCab
+
+mecab = MeCab.Tagger('')
+print(mecab.parse("私はリンゴを食べるのが好きです"))

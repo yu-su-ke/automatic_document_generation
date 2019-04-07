@@ -20,8 +20,8 @@ def sample(preds, temperature=1.0):
 
 
 # ファイルパス
-document_type = 'novel'
-text_file = 'wagahaiwa_nekodearu'
+document_type = 'livedoor/topic-news'
+text_file = 'all'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
@@ -47,7 +47,7 @@ print("Total words :", len(words))
 word_indices = dict((c, i) for i, c in enumerate(words))
 indices_word = dict((i, c) for i, c in enumerate(words))
 # (max_len)個の次の1単語を学習させる. (step)単語ずつずらして(max_len)単語と1単語というセットを作る
-max_len = 3
+max_len = 5
 step = 1
 sentences = []
 next_words = []
@@ -77,7 +77,7 @@ model.add(Activation("softmax"))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss="categorical_crossentropy", optimizer=optimizer)
 # epoch数
-ep = 40
+ep = 20
 
 
 def on_epoch_end(epoch, _):
