@@ -21,7 +21,7 @@ def sample(preds, temperature=1.0):
 
 # ファイルパス
 document_type = 'novel'
-text_file = 'souseki_merge'
+text_file = 'kusamakura'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
@@ -78,14 +78,15 @@ optimizer = RMSprop(lr=0.01)
 model.compile(loss="categorical_crossentropy", optimizer=optimizer)
 # epoch数
 ep = 20
+# テキストのスタート位置
+start_index = random.randint(0, len(text) - max_len - 1)  # ランダムスタート
+# start_index = 0  # テキストの最初からスタート
 
 
 def on_epoch_end(epoch, _):
     print()
     print('----- Generating text after Epoch: %d' % epoch)
 
-    start_index = random.randint(0, len(text) - max_len - 1)  # ランダムスタート
-    # start_index = 0  # テキストの最初からスタート
     for diversity in [0.2, 0.5, 1.0, 1.2]:
         print('----- diversity:', diversity)
 
