@@ -20,8 +20,8 @@ def sample(preds, temperature=1.0):
 
 
 # ファイルパス
-document_type = 'livedoor/topic-news'
-text_file = 'all'
+document_type = 'novel'
+text_file = 'souseki_merge'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
