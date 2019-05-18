@@ -1,8 +1,6 @@
 from glob import iglob
 import markovify
 import datetime
-# from mecab_markov import mecab_markov
-# from text_format import text_format
 from Markov import mecab
 from Markov import format
 
