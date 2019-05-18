@@ -6,8 +6,8 @@ import numpy as np
 import random
 import datetime
 import sys
-from mecab_lstm import mecab_lstm
-from text_format import text_format
+from LSTM import mecab
+from LSTM import format
 
 
 def sample(preds, temperature=1.0):
@@ -20,16 +20,16 @@ def sample(preds, temperature=1.0):
 
 
 # ファイルパス
-document_type = 'novel'
-text_file = 'kusamakura'
+document_type = 'tweet'
+text_file = 'WSJJapan'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
 save_path = '../' + document_type + '/lstm/'
-text_format(open_path, format_path, text_file, document_type)
+format.text_format(open_path, format_path, text_file, document_type)
 text_data = open(format_path + text_file + '_format.txt', "rb").read()
 text = text_data.decode("utf-8")
-splitted_text = mecab_lstm(text)
+splitted_text = mecab.mecab_lstm(text)
 
 # 現在時刻
 now = datetime.datetime.now()
@@ -77,7 +77,7 @@ model.add(Activation("softmax"))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss="categorical_crossentropy", optimizer=optimizer)
 # epoch数
-ep = 20
+ep = 5
 # テキストのスタート位置
 start_index = random.randint(0, len(text) - max_len - 1)  # ランダムスタート
 # start_index = 0  # テキストの最初からスタート

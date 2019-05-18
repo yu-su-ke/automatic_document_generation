@@ -6,7 +6,7 @@ import numpy as np
 import random
 import datetime
 import sys
-from text_format import text_format
+from LSTM import format
 
 
 def sample(preds, temperature=1.0):
@@ -25,7 +25,7 @@ text_file = 'WSJJapan'
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
 save_path = '../' + document_type + '/lstm/'
-text_format(open_path, format_path, text_file, document_type)
+format.text_format(open_path, format_path, text_file, document_type)
 text_data = open(format_path + text_file + '_format.txt', "rb").read()
 text = text_data.decode("utf-8")
 

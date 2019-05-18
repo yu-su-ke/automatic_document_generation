@@ -16,9 +16,8 @@ def load_from_file(files_pattern):
 
 
 def markov(splitted_text, save_path, text_file, i):
-    # learn model from text.
     text_model = markovify.NewlineText(splitted_text, state_size=2)
-    # ... and generate from model. tries default 10
+    # tries default 10
     sentence = text_model.make_sentence(tries=10)
 
     if str(sentence) != 'None':

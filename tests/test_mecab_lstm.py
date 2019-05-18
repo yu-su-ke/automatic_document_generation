@@ -1,6 +1,6 @@
 import unittest
-from LSTM.mecab_lstm import mecab_lstm
-from LSTM.text_format import text_format
+from LSTM.mecab import mecab_lstm
+from LSTM.format import text_format
 
 
 class TestMecab(unittest.TestCase):
