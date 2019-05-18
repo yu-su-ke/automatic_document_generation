@@ -5,10 +5,4 @@ venv
 /.idea
 .DS_Store
 
-tweet
-novel
 livedoor
-GetTweet
-
-text_merge.py
-timeMeasurement.py
