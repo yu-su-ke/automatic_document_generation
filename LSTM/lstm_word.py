@@ -20,8 +20,8 @@ def sample(preds, temperature=1.0):
 
 
 # ファイルパス
-document_type = 'tweet'
-text_file = 'WSJJapan'
+document_type = 'novel'
+text_file = 'bocchan'
 
 open_path = '../' + document_type + '/'
 format_path = '../' + document_type + '/format/'
@@ -77,10 +77,10 @@ model.add(Activation("softmax"))
 optimizer = RMSprop(lr=0.01)
 model.compile(loss="categorical_crossentropy", optimizer=optimizer)
 # epoch数
-ep = 5
+ep = 20
 # テキストのスタート位置
-start_index = random.randint(0, len(text) - max_len - 1)  # ランダムスタート
-# start_index = 0  # テキストの最初からスタート
+# start_index = random.randint(0, len(text) - max_len - 1)  # ランダムスタート
+start_index = 0  # テキストの最初からスタート
 
 
 def on_epoch_end(epoch, _):
